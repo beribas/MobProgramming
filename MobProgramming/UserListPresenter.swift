@@ -5,7 +5,7 @@
 //  Created by Martin List on 01.03.22.
 //
 
-import UIKit
+import Foundation
 
 final class UserListPresenter {
 
@@ -13,11 +13,19 @@ final class UserListPresenter {
         let name: String
         let email: String
         let avatarURL: String
+
+        static func create(from user: User) -> UserListCellModel {
+            return UserListCellModel(
+                name: user.first_name + " " + user.last_name,
+                email: user.email,
+                avatarURL: user.avatar
+            )
+        }
     }
 
     var numberOfSections: Int { 1 }
 
-    var numberOfRows: Int { users.count }
+    var numberOfRows: Int { userModels.count }
 
     weak var view: UserListView? {
         didSet {
@@ -25,16 +33,17 @@ final class UserListPresenter {
         }
     }
 
-    private var users: [User] = []
+    private var userModels: [UserListCellModel] = []
 
-    func getUsers() {
+    private func getUsers() {
         fetchUsers { [weak self] response in
-            self?.users = response.data
+
+            self?.userModels = response.data.map(UserListCellModel.create(from:))
             self?.view?.updateView()
         }
     }
 
-    func getCellModel(at index: Int) -> UserListCellModel {
-
+    func cellModel(at index: Int) -> UserListCellModel {
+        userModels[index]
     }
 }
