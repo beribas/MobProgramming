@@ -12,13 +12,13 @@ final class UserListPresenter {
     struct UserListCellModel {
         let name: String
         let email: String
-        let avatarURL: String
+        let avatarURL: URL?
 
         static func create(from user: User) -> UserListCellModel {
             return UserListCellModel(
                 name: user.first_name + " " + user.last_name,
                 email: user.email,
-                avatarURL: user.avatar
+                avatarURL: URL(string: user.avatar)
             )
         }
     }
@@ -39,7 +39,9 @@ final class UserListPresenter {
         fetchUsers { [weak self] response in
 
             self?.userModels = response.data.map(UserListCellModel.create(from:))
-            self?.view?.updateView()
+            DispatchQueue.main.async {
+                self?.view?.updateView()
+            }
         }
     }
 

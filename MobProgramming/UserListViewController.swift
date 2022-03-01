@@ -13,7 +13,7 @@ protocol UserListView: AnyObject {
 
 class UserCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        super.init(style: .default, reuseIdentifier: reuseIdentifier)
 
     }
 
@@ -60,6 +60,8 @@ class UserListViewController: UITableViewController {
         // cell.configure(config: cellConfig)
         cell.textLabel?.text = userListModel.name
         cell.detailTextLabel?.text = userListModel.email
+        // DONT DO IT!!!eins11!!
+        cell.imageView?.image = UIImage(data: try! Data(contentsOf: userListModel.avatarURL!))
         return cell
     }
 }

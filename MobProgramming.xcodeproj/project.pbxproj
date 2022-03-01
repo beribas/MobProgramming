@@ -17,6 +17,7 @@
 		97E4019227CE1B83002D8A31 /* MobProgrammingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E4019127CE1B83002D8A31 /* MobProgrammingUITests.swift */; };
 		97E4019427CE1B83002D8A31 /* MobProgrammingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E4019327CE1B83002D8A31 /* MobProgrammingUITestsLaunchTests.swift */; };
 		97E401A327CE5A6B002D8A31 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E401A227CE5A6B002D8A31 /* APIResponse.swift */; };
+		AE4D01F327CE6FEB002D2D4A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AE4D01F227CE6FEB002D2D4A /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		97E4019127CE1B83002D8A31 /* MobProgrammingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobProgrammingUITests.swift; sourceTree = "<group>"; };
 		97E4019327CE1B83002D8A31 /* MobProgrammingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobProgrammingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		97E401A227CE5A6B002D8A31 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		AE4D01F227CE6FEB002D2D4A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 		97E4016427CE1B7F002D8A31 = {
 			isa = PBXGroup;
 			children = (
+				AE4D01F227CE6FEB002D2D4A /* README.md */,
 				97E4016F27CE1B7F002D8A31 /* MobProgramming */,
 				97E4018627CE1B83002D8A31 /* MobProgrammingTests */,
 				97E4019027CE1B83002D8A31 /* MobProgrammingUITests */,
@@ -234,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE4D01F327CE6FEB002D2D4A /* README.md in Resources */,
 				97E4017D27CE1B82002D8A31 /* LaunchScreen.storyboard in Resources */,
 				97E4017A27CE1B82002D8A31 /* Assets.xcassets in Resources */,
 			);
