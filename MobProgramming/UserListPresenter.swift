@@ -9,6 +9,12 @@ import UIKit
 
 final class UserListPresenter {
 
+    struct UserListCellModel {
+        let name: String
+        let email: String
+        let avatarURL: String
+    }
+
     var numberOfSections: Int { 1 }
 
     var numberOfRows: Int { users.count }
@@ -26,5 +32,9 @@ final class UserListPresenter {
             self?.users = response.data
             self?.view?.updateView()
         }
+    }
+
+    func getCellModel(at index: Int) -> UserListCellModel {
+
     }
 }

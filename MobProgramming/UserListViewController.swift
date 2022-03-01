@@ -36,6 +36,12 @@ class UserListViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         presenter.numberOfRows
     }
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // dequeue cell
+        let cellConfig = presenter.cellConfig(at: indexPath.row)
+        // cell.configure(config: cellConfig)
+    }
 }
 
 extension UserListViewController: UserListView {
