@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  UserListViewController.swift
 //  MobProgramming
 //
 //  Created by Oleg Langer on 01.03.22.
@@ -7,11 +7,14 @@
 
 import UIKit
 
+protocol UserListView: AnyObject {
+    func updateView()
+}
 
-class ViewController: UITableViewController {
-    private let presenter: Presenter
+class UserListViewController: UITableViewController {
+    private let presenter: UserListPresenter
 
-    init(presenter: Presenter) {
+    init(presenter: UserListPresenter) {
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
     }
@@ -22,6 +25,8 @@ class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        presenter.view = self
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -33,3 +38,8 @@ class ViewController: UITableViewController {
     }
 }
 
+extension UserListViewController: UserListView {
+    func updateView() {
+        tableView.reloadData()
+    }
+}
