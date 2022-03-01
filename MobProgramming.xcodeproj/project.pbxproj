@@ -16,6 +16,7 @@
 		97E4018827CE1B83002D8A31 /* MobProgrammingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E4018727CE1B83002D8A31 /* MobProgrammingTests.swift */; };
 		97E4019227CE1B83002D8A31 /* MobProgrammingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E4019127CE1B83002D8A31 /* MobProgrammingUITests.swift */; };
 		97E4019427CE1B83002D8A31 /* MobProgrammingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E4019327CE1B83002D8A31 /* MobProgrammingUITestsLaunchTests.swift */; };
+		97E401A327CE5A6B002D8A31 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E401A227CE5A6B002D8A31 /* APIResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		97E4018D27CE1B83002D8A31 /* MobProgrammingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobProgrammingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E4019127CE1B83002D8A31 /* MobProgrammingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobProgrammingUITests.swift; sourceTree = "<group>"; };
 		97E4019327CE1B83002D8A31 /* MobProgrammingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobProgrammingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		97E401A227CE5A6B002D8A31 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				97E4017927CE1B82002D8A31 /* Assets.xcassets */,
 				97E4017B27CE1B82002D8A31 /* LaunchScreen.storyboard */,
 				97E4017E27CE1B82002D8A31 /* Info.plist */,
+				97E401A227CE5A6B002D8A31 /* APIResponse.swift */,
 			);
 			path = MobProgramming;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97E4017527CE1B7F002D8A31 /* ViewController.swift in Sources */,
+				97E401A327CE5A6B002D8A31 /* APIResponse.swift in Sources */,
 				97E4017127CE1B7F002D8A31 /* AppDelegate.swift in Sources */,
 				97E4017327CE1B7F002D8A31 /* SceneDelegate.swift in Sources */,
 			);
